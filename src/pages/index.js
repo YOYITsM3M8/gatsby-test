@@ -52,10 +52,7 @@ function Index() {
       <h2>The date according to Node.js (TypeScript) is:</h2>
       <p>{date ? date : '...'}</p>
     </main>
-    <Avatar
-      alt=""
-      src={id}
-    />
+    <Avatar alt="" src={id}/>
   );
 }
 
