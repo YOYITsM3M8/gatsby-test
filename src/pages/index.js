@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
+import avatar from "../components/avatar";
 import '../styles/index.css';
 
 function Index() {
@@ -10,6 +11,7 @@ function Index() {
       const newDate = await res.text();
       setDate(newDate);
     }
+    const { id } = request.query
     getDate();
   }, []);
   return (
@@ -50,6 +52,10 @@ function Index() {
       <h2>The date according to Node.js (TypeScript) is:</h2>
       <p>{date ? date : '...'}</p>
     </main>
+    <Avatar
+      alt=""
+      src={id}
+    />
   );
 }
 
