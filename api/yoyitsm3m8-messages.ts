@@ -1,4 +1,4 @@
-import { NowRequest, NowResponse } from '@vercel/node'
+import { NowRequest, NowResponse } from '@now/node'
 
 export default (request: NowRequest, response: NowResponse) => {
   const { name = 'World' } = request.query
