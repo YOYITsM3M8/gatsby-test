@@ -51,8 +51,8 @@ function Index() {
       <br />
       <h2>The date according to Node.js (TypeScript) is:</h2>
       <p>{date ? date : '...'}</p>
+      <Avatar alt="" src={id}/>
     </main>
-    <Avatar alt="" src={id}/>
   );
 }
 
