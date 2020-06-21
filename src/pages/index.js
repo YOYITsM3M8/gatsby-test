@@ -6,7 +6,7 @@ function Index() {
   const [date, setDate] = useState(null);
   useEffect(() => {
     async function getDate() {
-      const res = await fetch('/api/yoyitsm3m8-messages');
+      const res = await fetch('/api/date');
       const newDate = await res.text();
       setDate(newDate);
     }
@@ -48,7 +48,7 @@ function Index() {
       </p>
       <br />
       <h2>The date according to Node.js (TypeScript) is:</h2>
-      <p>{date ? date : 'Loading date...'}</p>
+      <p>{date ? date : '...'}</p>
     </main>
   );
 }
