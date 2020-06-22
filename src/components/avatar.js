@@ -1,12 +1,10 @@
 const classNames = require('classnames');
-const omit = require('lodash.omit');
 const PropTypes = require('prop-types');
 const React = require('react');
 
 const Avatar = props => (
     <img
         className={classNames('avatar', props.className)}
-        {...omit(props, ['className'])}
     />
 );
 
