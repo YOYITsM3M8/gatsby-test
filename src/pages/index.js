@@ -11,7 +11,7 @@ function Index() {
       const newDate = await res.text();
       setDate(newDate);
     }
-    const { id } = request.query
+    const { id = 2584924 } = request.query
     getDate();
   }, []);
   return (
