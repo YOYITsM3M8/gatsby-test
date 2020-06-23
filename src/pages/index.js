@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
-import avatar from "../components/avatar";
+import Avatar from "../components/avatar";
 import '../styles/index.css';
 
 function Index() {
